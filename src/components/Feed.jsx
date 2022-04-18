@@ -6,8 +6,8 @@ const Feed = ({ posts }) => {
   return (
     <>
       {posts.map((post) => (
-        <Col>
-          <NavLink key={post.id} to={`/post/${post.id}`} className="text-black">
+        <Col key={post.id}>
+          <NavLink to={`/post/${post.id}`} className="text-black">
             <Card className="mb-3 shadow h-100">
               <Card.Header className="fw-bold text-center bg-dark text-white border-bottom border-4">{post.title}</Card.Header>
               <Card.Body className="p-0">

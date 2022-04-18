@@ -38,6 +38,9 @@ const Post = ({
                 value={postImg}
                 onChange={(e) => setPostImg(e.target.value)}
               />
+              <Form.Text className="text-muted">
+                * go to Google - search some img - right click and "copy the image address".
+              </Form.Text>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="postBody">
