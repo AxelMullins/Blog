@@ -39,6 +39,7 @@ function App() {
   const [searchResults, setSearchResults] = useState([]);
   const [postTitle, setPostTitle] = useState("");
   const [postBody, setPostBody] = useState("");
+  const [postCreated, setPostCreated] = useState(false);
 
   useEffect(() => {
     const filteredResults = posts.filter(
@@ -59,6 +60,7 @@ function App() {
     setPosts(allPosts);
     setPostTitle("");
     setPostBody("");
+    setPostCreated(true);
   };
 
   const handleDelete = (id) => {
@@ -81,6 +83,8 @@ function App() {
               postBody={postBody}
               setPostBody={setPostBody}
               handleSubmit={handleSubmit}
+              postCreated={postCreated}
+              setPostCreated={setPostCreated}
             />
           }
         />

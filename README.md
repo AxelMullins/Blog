@@ -4,12 +4,13 @@
 
 ## Librerías:
 - [React Bootstrap](https://react-bootstrap.github.io/) (estilos)
-- [react-icons](https://www.npmjs.com/package/react-icons) (iconos Fa)
+- [react-icons](https://www.npmjs.com/package/react-icons) (iconos)
+    - [Docs](https://react-icons.github.io/react-icons) (iconos)
 - [json-server]
     - `npx json-server -p 3500 -w data/db.json`  
     - Si creas el script en el "package.json" ("fake-server": "npx json-server -p 3500 -w data/db.json") se puede correr el comando `npm run fake-server`  
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
-- [date-fns]()
+- [date-fns](fecha de creación)
     - `npm date-fns`
 
 ## Notas 📢
