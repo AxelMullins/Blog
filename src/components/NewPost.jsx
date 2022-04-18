@@ -6,6 +6,8 @@ const Post = ({
   postTitle,
   setPostBody,
   postBody,
+  setPostImg,
+  postImg,
   handleSubmit,
   postCreated,
   setPostCreated,
@@ -24,6 +26,17 @@ const Post = ({
                 placeholder="Post Title"
                 value={postTitle}
                 onChange={(e) => setPostTitle(e.target.value)}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="postImg">
+              <Form.Label>Post Img</Form.Label>
+              <Form.Control
+                type="text"
+                required
+                placeholder="Post Img"
+                value={postImg}
+                onChange={(e) => setPostImg(e.target.value)}
               />
             </Form.Group>
 

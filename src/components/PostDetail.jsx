@@ -11,7 +11,7 @@ const PostDetail = ({ posts, handleDelete }) => {
         <article>
           {post && (
             <Card className="mb-3 shadow">
-              <Card.Header className="fw-bold d-flex justify-content-between">
+              <Card.Header className="fw-bold d-flex justify-content-between align-items-lg-center">
                 <Card.Title>{post.title}</Card.Title>
                 <Button
                   variant="transparent"
@@ -35,7 +35,7 @@ const PostDetail = ({ posts, handleDelete }) => {
           )}
           {!post && (
             <div className="text-center my-5">
-              <p className="ttext-danger">Post not found</p>
+              <p className="ttext-danger">Post deleted</p>
               <Button variant="primary">
                 <NavLink to="/" className="text-white">
                   Go to Home
