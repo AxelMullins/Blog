@@ -23,7 +23,7 @@ const PostDetail = ({ posts, handleDelete }) => {
               <Card.Body>
                 <Row>
                   <Col xs="12" md="6" lg="4">
-                    <Card.Img src="https://i0.wp.com/criptotendencia.com/wp-content/uploads/2022/03/La-capitalizacion-del-mercado-crypto-supera-nuevamente-los-2-billones-gracias-al-repunte-generalizado-de-los-precios.jpg?resize=880%2C450&ssl=1"></Card.Img>
+                    <Card.Img src={post.img}></Card.Img>
                   </Col>
                   <Col>
                     <Card.Text>{post.body}</Card.Text>
